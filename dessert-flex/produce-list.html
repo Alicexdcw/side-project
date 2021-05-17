@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品列表</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap");
+
+        :root {
+            --primary: #8DA291;
+            --light: #eaf0ed;
+            --fz-title: 24px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Noto Sans TC", sans-serif;
+            color: var(--primary);
+        }
+        .wrap{
+            width: 310px;
+            margin: 0 auto;
+        }
+        .title{
+            background: var(--light);
+            color: var(--primary);
+            text-align: center;
+            padding: 10px;
+            font-size: var(--fz-title);
+        }
+
+        .summary, .list{
+            border: 1px solid var(--light);
+        }
+        .list{
+            margin-top: 20px;
+        }
+        .summary-detail{
+            padding: 10px 0;
+        }
+        .summary-detail-item{
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .bold-margin{
+            font-weight: 900;
+            margin-top: 10px;
+            font-size:20px;
+        }
+        .list-card{
+            display: flex;
+            margin: 20px 10px;
+        }
+
+        .list-card > img{
+            margin-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="summary">
+            <div class="title">訂單摘要</div>
+            <div class="summary-detail">
+                <div class="summary-detail-item">
+                    <span>小計</span>
+                    <span>NT$2,700</span>
+                </div>
+                <div class="summary-detail-item">
+                    <span>運費</span>
+                    <span>NT$300</span>
+                </div>
+                <div class="summary-detail-item bold-margin">
+                    <span><b>總計</b></span>
+                    <span>NT$3,000</span>
+                </div>
+            </div>
+        </div>
+        <div class="list">
+            <div class="title">購物清單</div>
+            <div class="list-detail">
+                <div class="list-card">
+                    <img src="https://hexschool.github.io/flexImgUrl/9/pic.png" alt="">
+                    <div class="produce-detail">
+                        <div class="produce-name">焦糖馬卡龍 (2)</div>
+                        <div class="bold-margin">NT$ 900</div>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <img src="https://hexschool.github.io/flexImgUrl/9/pic.png" alt="">
+                    <div class="produce-detail">
+                        <div class="produce-name">焦糖馬卡龍 (2)</div>
+                        <div class="bold-margin">NT$ 900</div>
+                    </div>
+                </div>
+                <div class="list-card">
+                    <img src="https://hexschool.github.io/flexImgUrl/9/pic.png" alt="">
+                    <div class="produce-detail">
+                        <div class="produce-name">焦糖馬卡龍 (2)</div>
+                        <div class="bold-margin">NT$ 900</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-產品列表</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap");
+
+        :root {
+            --primary: #37523d;
+            --light: #eaf0ed;
+            --fz-medium: 24px;
+            --fz-small: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Noto Sans TC", sans-serif;
+            font-weight: 500;
+        }
+
+        .wrap {
+            display: flex;
+            width: 950px;
+            margin: 0 auto;
+            color: var(--primary);
+        }
+
+        nav {
+            width: 33.3%;
+            margin-right: 20px;
+            text-align: center;
+            font-size: var(--fz-medium);
+        }
+
+        .navheader {
+            background-color: var(--primary);
+            color: #fff;
+            padding: 10px;
+        }
+
+        ul li {
+            padding: 10px;
+            list-style: none;
+            color: var(--primary);
+        }
+
+        ul li:hover {
+            background: var(--light);
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        main {
+            display: flex;
+            font-size: 16px;
+            flex-wrap: wrap;
+            
+        }
+        .card-img{
+            width: 100%;
+        }
+
+        .card{
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        .produce {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: var(--fz-small);
+        }
+
+        .produce-detail {
+            padding: 10px 33px;
+            border-left: 1px solid var(--light) ;
+            border-right: 1px solid var(--light);
+        }
+
+        .addcart {
+            text-align: center;
+            padding: 20px;
+            background: var(--light);
+            color: var(--primary);
+            font-size: var(--fz-medium);
+            transition: 0.5s;
+        }
+        .addcart:hover{
+            background: var(--primary);
+            cursor: pointer;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <nav>
+            <div class="navheader">
+                甜點類別
+            </div>
+            <ul>
+                <li>所有甜點(45)</li>
+                <li>本日精選(10)</li>
+                <li>人氣精選(26)</li>
+                <li>新品上市(12)</li>
+            </ul>
+        </nav>
+        <main>
+            <div class="card">
+                <img class="card-img" src="https://hexschool.github.io/flexImgUrl/10/pic1.png">
+                <div class="produce">
+                    <div class="produce-detail">焦糖甜甜圈</div>
+                    <div class="produce-detail">NT$450</div>
+                </div>
+                <div class="addcart">
+                    加入購物車
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://hexschool.github.io/flexImgUrl/10/pic2.png">
+                
+                <div class="produce">
+                    <div class="produce-detail">焦糖甜甜圈</div>
+                    <div class="produce-detail">NT$450</div>
+                </div>
+                <div class="addcart">
+                    加入購物車
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://hexschool.github.io/flexImgUrl/10/pic3.png">
+                <div class="produce">
+                    <div class="produce-detail">焦糖甜甜圈</div>
+                    <div class="produce-detail">NT$450</div>
+                </div>
+                <div class="addcart">
+                    加入購物車
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+
+</html>
